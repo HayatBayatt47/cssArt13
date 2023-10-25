@@ -1,0 +1,38 @@
+body{
+    width: 400px;
+    height: 300px;
+    background-color:#E3B52E;
+    display:grid;
+    place-items:center;
+    position:relative;
+  }
+  div {
+    width: 90px;
+    height: 90px;
+    border:30px solid #8C292A;
+    transform:rotate(45deg);
+    position:absolute;
+  }
+  div:before{
+    content:"";
+    display:block;
+    width:30px;
+    height:160px;
+    background-color:#8C292A;
+    transform:rotate(-45deg);
+    position:absolute;
+    bottom:80px;
+    box-shadow:-120px 0px 0px #8C292A,-120px 205px 0px #8C292A,0px 205px 0px #8C292A;
+  }
+  div:after{
+    content:"";
+    display:block;
+    background-color:#8C292A;
+    width:30px;
+    height:105px;
+    transform:rotate(-45deg);
+    position:absolute;
+    bottom:90px;
+    right:128px;
+    box-shadow:0px 260px 0px #8C292A;
+  }
